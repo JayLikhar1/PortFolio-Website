@@ -2,6 +2,10 @@
 
 A modern, responsive portfolio website built with React and enhanced with premium animations and effects.
 
+## 🌐 Live Demo
+
+**Live Link:** https://jay-portfolio-21c8e.web.app/
+
 ## 🚀 Features
 
 - **Modern Design**: Clean, professional layout with premium animations
@@ -9,6 +13,8 @@ A modern, responsive portfolio website built with React and enhanced with premiu
 - **Interactive**: Smooth animations and hover effects throughout
 - **Performance Optimized**: Fast loading with optimized assets
 - **SEO Friendly**: Proper meta tags and semantic HTML
+- **Firebase Hosted**: Global CDN for fast worldwide access
+- **Multiple Deployment Options**: Firebase, GitHub Pages, Vercel, Netlify
 
 ## 🛠️ Tech Stack
 
@@ -17,10 +23,16 @@ A modern, responsive portfolio website built with React and enhanced with premiu
 - **Tailwind CSS** - Utility-first CSS framework
 - **Lucide React** - Beautiful icons
 - **Custom Animations** - Premium CSS animations and effects
+- **Radix UI** - Accessible component primitives
 
 ### Backend (Optional)
 - **FastAPI** - Modern Python web framework
 - **Uvicorn** - ASGI server
+
+### Deployment
+- **Firebase Hosting** - Primary hosting platform
+- **GitHub Pages** - Alternative hosting
+- **Vercel/Netlify** - Additional deployment options
 
 ## 📦 Installation & Setup
 
@@ -61,6 +73,8 @@ uvicorn server:app --reload --port 8000
 
 The backend will be available at `http://localhost:8000`
 
+**Note:** The frontend works as a standalone application. The backend is optional and provides additional API functionality if needed.
+
 ## 🎨 Customization
 
 ### Personal Information
@@ -92,28 +106,41 @@ Update your personal information in the following files:
 
 ## 🚀 Deployment
 
-### Frontend Deployment
-The frontend can be deployed to any static hosting service:
+This portfolio is deployed on **Firebase Hosting** for optimal performance and global accessibility.
 
+### Live Deployment
+- **Primary:** [Firebase Hosting](https://jay-portfolio-21c8e.web.app/) - Main production site
+- **Backup:** [GitHub Pages](https://jaylikhar1.github.io/PortFolio-Website) - Alternative hosting
+
+### Deployment Platforms Available
+
+#### 1. **Firebase Hosting** ✅ (Currently Deployed)
+- **URL:** https://jay-portfolio-21c8e.web.app/
+- **Features:** Global CDN, Custom domains, SSL, Version history
+- **Deploy Command:** `firebase deploy` (from frontend folder)
+
+#### 2. **Vercel** (Alternative)
+- Go to [vercel.com](https://vercel.com)
+- Import your GitHub repo
+- Set root directory to `frontend`
+- Auto-deploys on every push
+
+#### 3. **Netlify** (Alternative)
+- Go to [netlify.com](https://netlify.com)
+- Connect GitHub repo
+- Set build directory to `frontend`
+- Build command: `npm run build`
+
+#### 4. **GitHub Pages** ✅ (Also Deployed)
+- **Deploy Command:** `npm run deploy` (from frontend folder)
+- Automatically configured with gh-pages
+
+### 🔄 To Update Live Site:
 ```bash
-# Build for production
+cd frontend
 npm run build
-
-# The build folder contains the production-ready files
+firebase deploy
 ```
-
-**Recommended platforms:**
-- Vercel
-- Netlify
-- GitHub Pages
-- Firebase Hosting
-
-### Backend Deployment
-The backend can be deployed to:
-- Heroku
-- Railway
-- DigitalOcean
-- AWS EC2
 
 ## 📄 License
 
