@@ -1,0 +1,13 @@
+backend/
+tests/
+test_reports/
+memory/
+.emergent/
+*.md
+.git/
+.vscode/
+frontend/node_modules/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
